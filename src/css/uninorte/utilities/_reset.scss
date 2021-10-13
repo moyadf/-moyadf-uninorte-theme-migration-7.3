@@ -1,0 +1,31 @@
+// Resetter
+// --
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+fieldset[disabled] .form-control,
+.form-control[disabled] {
+  color: inherit;
+  opacity: 0.35;
+}
+
+/** reset clases liferay **/
+.portlet {
+  margin-bottom: 0;
+}
+
+.portlet-title-text {
+  display: none;
+}
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  padding: 0;
+}

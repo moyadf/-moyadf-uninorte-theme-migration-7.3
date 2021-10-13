@@ -1,0 +1,16 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+@import "./uninorte/components";
+@import "./uninorte/globals";
+@import "./uninorte/utilities";
+@import "./uninorte/variables";
+
+@import "aui_variables";
+@import "uninorte-vendors";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");

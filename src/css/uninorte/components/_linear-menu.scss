@@ -1,0 +1,65 @@
+// Linear Menu
+// --
+
+.uni-linear-menu {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  font-size: $linear-menu-default-font-size;
+
+  li {
+    @include simple-animate;
+
+    align-items: center;
+    display: flex;
+    padding: 15px;
+
+    &:hover {
+      background: $linear-menu-default-hover-bg;
+
+      .uni-icon {
+        color: $header-community-logo-linear-menu-color-hovered;
+      }
+    }
+  }
+
+  a {
+    @include simple-animate;
+
+    color: $linear-menu-default-color;
+    text-decoration: none;
+    font-family: $linear-menu-font-family;
+  }
+
+  .dropdown-menu {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 0;
+
+    .child-menu__item {
+      padding: 0;
+
+      a {
+        @include simple-animate;
+
+        opacity: 1;
+        color: $dropdown-menu-dropdown-link-color;
+
+        padding: 10px 15px;
+        width: 100%;
+
+        &:hover {
+          color: $dropdown-menu-dropdown-link-color-hover;
+          background: $dropdown-menu-dropdown-child-menu-item-hover-bg;
+        }
+      }
+    }
+  }
+
+  .uni-icon {
+    color: rgba($dropdown-menu-color, 0.6);
+    font-size: $dropdown-menu-arrow-icon-size;
+  }
+}

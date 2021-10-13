@@ -1,0 +1,128 @@
+.uninorte-footer {
+  background-color: #1d1d1b;
+  .uninorte-footer__container {
+    max-width: 1040px;
+    max-width: 1140px;
+    margin: auto;
+    width: 100%;
+
+    .portlet-borderless .portlet-content {
+      padding: 0;
+    }
+
+    .uninorte-footer__columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: auto 75%;
+      grid-auto-rows: auto;
+      grid-gap: 100px;
+
+      .uninorte-footer__item.item-1 {
+        .uninorte-footer__logo {
+          .uninorte__logo,
+          .uninorte__separator {
+            width: 210px;
+            object-fit: contain;
+          }
+        }
+
+        .uninorte-location {
+          display: block;
+          color: #fff;
+          margin: 20px 0;
+        }
+
+        .uninorte__links {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            a {
+              display: flex;
+              align-items: center;
+              margin: 10px 0;
+              text-decoration: none;
+              span {
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                margin-left: 15px;
+              }
+              img {
+                width: 30px;
+              }
+            }
+          }
+        }
+
+        .uninorte_social {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 30px 0;
+          margin: 20px 0 20px 0;
+
+          li {
+            margin: 0px 10px;
+
+            a img {
+              object-fit: contain;
+              width: 25px;
+              height: 25px;
+            }
+          }
+
+          li:first-child {
+            margin: 0;
+          }
+        }
+
+        small {
+          display: block;
+          a {
+            color: #fff;
+            display: block;
+          }
+        }
+      }
+
+      .uninorte-footer__item.item-2 {
+        .uninorte-footer__category {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: baseline;
+          height: 60px;
+
+          .uninorte-footer-menu__link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+          }
+          .uninorte__separator {
+            width: 150px;
+            object-fit: contain;
+          }
+        }
+        .uninorte-footer-menu__sublist {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          color: #fff;
+
+          .uninorte-footer-menu__subitem {
+            .uninorte-footer-menu__sublink {
+              color: #fff;
+              text-decoration: none;
+              max-width: 200px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

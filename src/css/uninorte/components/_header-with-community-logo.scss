@@ -1,0 +1,51 @@
+// Header with community logo
+// --
+
+.uni-header-with-community-logo {
+  background: $header-community-logo-bg;
+  box-shadow: 0 -2px 8px rgba($uni-black, 0.33);
+}
+
+.uni-header-with-community-logo__wrapper {
+  display: flex;
+
+  // Customize linear menu colors
+  .uni-linear-menu {
+    li {
+      &:hover {
+        background: $header-community-logo-linear-menu-hover-bg;
+
+        a {
+          color: $header-community-logo-linear-menu-color-hovered;
+        }
+      }
+    }
+
+    a {
+      color: $header-community-logo-linear-menu-color;
+    }
+  }
+}
+
+.uni-community-logo-area {
+  background: $header-community-logo-logo-area-bg;
+  justify-content: center;
+  min-width: $header-community-logo-logo-area-min-width;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+
+  a.logo {
+    text-decoration: none;
+  }
+
+  .uni-community-site-name {
+    text-transform: uppercase;
+    font-family: $header-community-logo-site-name-ff;
+    font-size: $header-community-logo-site-name-size;
+  }
+}
+
+.uni-community-logo__image {
+  max-width: $header-community-logo-image-max-width;
+}

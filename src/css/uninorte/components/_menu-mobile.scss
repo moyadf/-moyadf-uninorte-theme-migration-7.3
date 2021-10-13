@@ -1,0 +1,64 @@
+// Mobile Menu
+// --
+
+.uni-hamburguer-menu-content {
+  overflow-y: auto;
+
+  ul {
+    margin: 0;
+  }
+
+  ul li a {
+    margin: 0 15px 0 0;
+    display: flex;
+    padding: 5px 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .uni-icon {
+    margin-left: 5px;
+  }
+}
+
+.uni-hamburguer-menu-item {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.21961);
+  padding: 5px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 15px 0 0;
+  align-items: center;
+}
+
+.uni-hamburguer-menu-content__black {
+  margin-left: 0;
+  padding: 15px 0;
+  background: $mobile-menu-black-bg;
+  text-align: right;
+
+  a,
+  .uni-hamburguer-menu-item {
+    color: $mobile-menu-black-color;
+  }
+}
+
+.uni-hamburguer-menu-content__gray {
+  padding: 15px 0;
+  background: $mobile-menu-grey-bg;
+  text-align: right;
+
+  a,
+  .uni-hamburguer-menu-item {
+    color: $mobile-menu-grey-color;
+  }
+
+  .child-menu {
+    background: $mobile-menu-grey-child-menu-bg;
+    padding: 5px 0;
+  }
+}
+
+.uni-hamburguer-menu-content__title {
+  text-transform: uppercase;
+  margin-right: 15px;
+}

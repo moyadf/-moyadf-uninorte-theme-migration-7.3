@@ -1,0 +1,91 @@
+// Header Home
+// --
+
+.uni-header {
+  @include simple-animate;
+
+  width: 100%;
+  z-index: $header-home-zindex;
+  top: $header-home-position;
+  position: fixed;
+}
+
+.uni-header-home {
+  background: $header-home-bg;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
+  padding: $header-home-paddings 0;
+  position: relative;
+
+  height: $header-home-height;
+}
+
+.uni-logo-effect {
+  @include simple-animate;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+.uni-header-home__logo {
+  position: absolute;
+  margin-left: -10px;
+
+  .uni-svg-icon {
+    width: $header-home-logo-size;
+  }
+}
+
+.uni-header-home__menu {
+  display: flex;
+  margin: 0;
+  align-items: flex-start;
+  justify-content: center;
+
+  li {
+    padding: 15px 25px;
+    max-width: 12%;
+    line-height: 1rem;
+    text-align: center;
+
+    &:nth-child(2) {
+      margin-right: $header-home-menu-item-logo-separator-calc;
+    }
+
+    &:nth-child(3) {
+      margin-left: $header-home-menu-item-logo-separator-calc;
+    }
+  }
+
+  &.sticky-header {
+    margin-left: calc(58px + 15px);
+
+    li {
+      max-width: initial;
+
+      &:nth-child(2) {
+        margin-right: calc(29px + 15px);
+      }
+
+      &:nth-child(3) {
+        margin-left: calc(29px + 15px);
+      }
+    }
+  }
+
+  a {
+    @include simple-animate;
+
+    color: $header-home-menu-color;
+    text-decoration: none;
+    font-family: $ff-open-sans-bold;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

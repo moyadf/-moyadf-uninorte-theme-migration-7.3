@@ -1,0 +1,6 @@
+// Useful custom mixins
+// --
+
+@mixin simple-animate($property:all, $duration:0.2s, $animation:ease-in) {
+    @include transition($property $duration $animation);
+}

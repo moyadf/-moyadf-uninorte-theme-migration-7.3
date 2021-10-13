@@ -1,0 +1,112 @@
+// Pre header
+// --
+@import "../utilities/mixins";
+
+.uni-pre-header-wrapper {
+  position: relative;
+}
+
+.uni-pre-header {
+  background: $pre-header-bg;
+
+  // The same padding of #content
+  padding: 0 5em;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: $pre-header-zindex;
+
+  height: $pre-header-height;
+
+  a {
+    @include simple-animate;
+
+    text-decoration: none;
+    font-family: $ff-open-sans-bold;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.uni-idiomas {
+  margin-right: 10px;
+
+  .dropdown-menu {
+    a {
+      font-family: $ff-open-sans-regular;
+    }
+  }
+}
+
+.uni-pre-header__menu,
+.uni-pre-header__portales-menu-wrapper {
+  display: flex;
+}
+
+.uni-pre-header__portales-menu-wrapper {
+  @include simple-animate;
+
+  overflow-x: hidden;
+  width: 0;
+  display: inline;
+}
+
+.uni-pre-header__menu-item {
+  font-family: $ff-open-sans-bold;
+  font-size: $pre-header-menu-item-size;
+  color: $pre-header-menu-item-color;
+  padding: $pre-header-items-padding;
+}
+
+.uni-pre-header__portales-menu {
+  display: inline-flex;
+  background: $pre-header-portales-menu-bg;
+  align-items: center;
+  margin: 0;
+  white-space: nowrap;
+  height: 100%;
+
+  li:not(:last-child) {
+    border-right: 1px solid darken($pre-header-portales-menu-bg, 15%);
+  }
+
+  a {
+    font-size: $pre-header-portales-menu-item-size;
+    color: $pre-header-menu-item-color;
+    padding: $pre-header-items-padding 15px;
+  }
+}
+
+.uni-pre-header__menu-item {
+}
+
+// Icons
+.uni-icon-pre-header {
+  width: $pre-header-icon-size;
+  margin-right: 5px;
+}
+
+// Search
+.uni-pre-header__search {
+  margin-left: 15px;
+  padding: $pre-header-items-padding 0;
+}
+
+// When there is a Mega Menu
+// --
+
+.uni-pre-header__menu-wrapper {
+  display: flex;
+  position: absolute;
+  right: 5em;
+  background: $pre-header-bg;
+}
+
+.uni-has-mega-menu {
+  justify-content: space-between !important;
+}

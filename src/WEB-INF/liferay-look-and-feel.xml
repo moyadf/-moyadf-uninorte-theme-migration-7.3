@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.3.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_3_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>7.3.0+</version>
+	</compatibility>
+	<theme id="uninorte-theme" name="uninorte-theme">
+		<template-extension>ftl</template-extension>
+		<settings>
+			<!-- Navegación principal preferencias para incluir las url, target y nombre de paginas -->
+			<setting configurable="true" key="sobre-nosotros-name" type="text" value="Sobre Uninorte"/>
+			<setting configurable="true" key="sobre-nosotros-url" type="text" value="https://www.uninorte.edu.co/sobrenosotros"/>
+			<setting configurable="true" key="estudia-con-nosotros-name" type="text" value="Estudia con nosotros"/>
+			<setting configurable="true" key="estudia-con-nosotros-url" type="text" value="https://www.uninorte.edu.co/estudia"/>
+			<setting configurable="true" key="admisiones-registro-name" type="text" value="Admisiones y registro"/>
+			<setting configurable="true" key="admisiones-registro-url" type="text" value="https://www.uninorte.edu.co/admisiones-y-registro"/>
+			<setting configurable="true" key="becas-apoyo-pagos-name" type="text" value="Becas, apoyo financiero y pagos"/>
+			<setting configurable="true" key="becas-apoyo-pagos-url" type="text" value="https://www.uninorte.edu.co/pagos-y-financiacion"/>
+			<setting configurable="true" key="uninorte-logo-url" type="text" value="https://www.uninorte.edu.co/univerano"/>
+			<setting configurable="true" key="tipo-target-url" options="_blank,_self" type="select" value="_self" />
+		</settings>
+		<portlet-decorator id="barebone" name="Barebone">
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<default-portlet-decorator>true</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator>
+	</theme>
+</look-and-feel>

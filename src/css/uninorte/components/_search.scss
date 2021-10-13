@@ -1,0 +1,53 @@
+// Search
+// --
+
+// Search on header
+.uni-header-search-wrapper {
+  @include simple-animate();
+
+  background: $search-box-bg;
+  padding: 15px;
+  position: fixed;
+  top: -72px;
+  z-index: $search-box-zindex;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  right: 60px;
+
+  @include respond-to(phone) {
+    z-index: 290;
+  }
+
+  &.search-box--open {
+    top: $search-box-open-position;
+
+    @include respond-to(phone) {
+      top: 72px !important;
+    }
+  }
+
+  input[type="search"] {
+    padding: 10px;
+    min-width: $search-box-input-width;
+    margin-bottom: 0;
+  }
+}
+
+.uni-header-search__close {
+  font-size: $search-box-close-size;
+  color: $search-box-close-color;
+  margin-left: 15px;
+}
+
+// Buscador portlet
+.search-portlet {
+  .portlet {
+    margin-bottom: 0;
+  }
+
+  .portlet-topper {
+    display: none;
+  }
+}

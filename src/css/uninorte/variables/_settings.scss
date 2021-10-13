@@ -1,0 +1,127 @@
+// Project Settings
+// ------------------
+@import "colors";
+// Project prefix
+$prefix: "uni";
+
+// Typography
+$type-dir: "../fonts";
+
+// Initial Liferay z-index value
+$lfr-initial-zindex-value: 300;
+$lfr-dockbar-height: 44px;
+
+// Typography
+// --
+$ff-open-sans-bold: "open_sansbold";
+$ff-open-sans-regular: "open_sansregular";
+$ff-bebas-neue-bold: "bebas_neuebold";
+$ff-bebas-neue-regular: "bebas_neueregular";
+$ff-crimson-roman: "crimsonroman";
+$ff-crimson-semibold: "crimsonsemibold";
+$ff-mallorylight: "mallorylight";
+$ff-mallorylight-italic: "mallorylight_italic";
+$ff-mallory-medium: "mallorymedium";
+$ff-mallory-medium-italic: "mallorymedium_italic";
+
+// Headers
+// --
+
+// Pre header
+$pre-header-bg: $uni-grey;
+$pre-header-menu-item-color: $uni-grey-dark;
+$pre-header-menu-item-size: 0.875rem;
+$pre-header-portales-menu-item-size: 0.775rem;
+$pre-header-portales-menu-bg: $uni-greymid;
+$pre-header-icon-size: 22px;
+$pre-header-items-padding: 10px;
+$pre-header-height: 42px;
+$pre-header-zindex: $lfr-initial-zindex-value + 5;
+
+// Header Home
+$header-home-logo-size: 245px;
+$header-home-logo-size-half: ($header-home-logo-size / 2);
+$header-home-logo-sticky-size: 58px;
+$header-home-menu-color: $uni-grey-dark;
+$header-home-paddings: 15px;
+$header-home-menu-item-logo-separator-calc: $header-home-logo-size-half + 15px;
+$header-home-height: 58px;
+$header-home-innerheight: $header-home-height + (2 * $header-home-paddings);
+$header-home-bg: $uni-white;
+$header-home-signed-out-position: 0;
+$header-home-position: $lfr-dockbar-height;
+$header-home-zindex: $lfr-initial-zindex-value + 10;
+
+// Header with community logo
+$header-community-logo-bg: $uni-grey-dark;
+$header-community-logo-logo-area-bg: $uni-white;
+$header-community-logo-linear-menu-hover-bg: $uni-grey;
+$header-community-logo-linear-menu-color: $uni-white;
+$header-community-logo-linear-menu-color-hovered: $uni-black;
+$header-community-logo-image-max-width: 195px;
+$header-community-logo-site-name-ff: $ff-open-sans-bold;
+$header-community-logo-site-name-size: 1.475rem;
+$header-community-logo-logo-area-min-width: 150px;
+
+// Header Mobile
+$header-mobile-bg: $uni-white;
+$header-mobile-paddings: 15px;
+$header-mobile-logo-size: 145px;
+
+// Dropdown Menu (Menu Black)
+$dropdown-menu-bg: $uni-black;
+$dropdown-menu-color: $uni-white;
+$dropdown-menu-size: 0.875rem;
+$dropdown-menu-arrow-icon-size: 0.675rem;
+$dropdown-menu-father-active-bg: $uni-grey-dark;
+$dropdown-menu-dropdown-link-color: $uni-grey-dark;
+$dropdown-menu-dropdown-link-color-hover: $uni-white;
+$dropdown-menu-dropdown-child-menu-item-hover-bg: $uni-pink;
+$dropdown-menu-first-child-item-min-width: 165px;
+$dropdown-menu-first-child-item-max-width: 131px;
+$dropdown-menu-height: 82px;
+
+// Mobile Menu
+$mobile-menu-size: 300px;
+$mobile-menu-slideout-panel-bg: $uni-white;
+$mobile-menu-panel-bg: $uni-grey;
+$mobile-menu-overlay-panel-color: $uni-white;
+$mobile-menu-overlay-panel-zindex-value: $header-home-zindex + 1;
+$mobile-menu-itens-color: $uni-black;
+$mobile-menu-black-bg: $uni-black;
+$mobile-menu-grey-bg: $uni-grey;
+$mobile-menu-black-color: $uni-white;
+$mobile-menu-grey-color: $uni-black;
+$mobile-menu-grey-child-menu-bg: $uni-white;
+
+// Search
+$search-shadow-color: $uni-black;
+$search-box-open-position: 42px;
+$search-box-zindex: 318;
+$search-box-bg: $uni-grey;
+$search-box-close-size: 1.6rem;
+$search-box-close-color: $uni-grey-dark;
+$search-box-input-width: 300px;
+
+// Custom Dockbar
+$lfr-dockbar-custom-zindex: $search-box-zindex + 1;
+
+// Linear Menu (Header with community logo menu)
+$linear-menu-default-hover-bg: $uni-grey;
+$linear-menu-default-color: $uni-black;
+$linear-menu-font-family: $ff-open-sans-regular;
+$linear-menu-default-font-size: 0.875rem;
+
+// Sticky Header
+$sticky-header-spacing: $pre-header-height + $header-home-innerheight +
+  $dropdown-menu-height + $lfr-dockbar-height;
+$sticky-header-spacing-header-with-community-logo: $pre-header-height + 85px +
+  $lfr-dockbar-height;
+$sticky-header-spacing-header-with-only-site-name: $pre-header-height + 57px +
+  $lfr-dockbar-height;
+$sticky-header-mobile-spacing: 110px;
+
+// Footer
+// --
+$footer-bg: $uni-grey-dark;
+$footer-color: $uni-white;

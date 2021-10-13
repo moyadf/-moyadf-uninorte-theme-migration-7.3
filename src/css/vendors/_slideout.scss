@@ -1,0 +1,102 @@
+// SlideOut Lib
+// @See https://github.com/mango/slideout
+// --
+
+.slideout-menu {
+  background: $mobile-menu-panel-bg;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: $mobile-menu-size;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  // z-index: 1;
+  background-color: $mobile-menu-slideout-panel-bg; /* A background-color is required */
+  min-height: 100vh;
+
+  // mobile
+  // Liferay: Do not remove this commented code.
+  // Commenting this code of slideout because we have a issue
+  // with z-index of liferay modals
+  // @include media-query(null, $screen-sm-max) {
+  //   will-change: transform;
+  // }
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+// Liferay Custom
+// --
+.slideout-open {
+  &.uni-html-mobile-styleguide {
+    overflow: auto;
+  }
+
+  .slideout-panel {
+    // TODO: Create variables for mobile-menu
+    &::after {
+      // box-shadow: 0 10px 85px 10px $mobile-menu-shadow-color;
+      // -moz-box-shadow: 0 10px 85px 10px $mobile-menu-shadow-color;
+      // -webkit-box-shadow: 0 10px 85px 10px $mobile-menu-shadow-color;
+      content: "";
+      height: 100vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 0;
+      z-index: 2;
+    }
+  }
+}
+
+// Add an overlay panel
+.slideout-panel-wrapper::before {
+  content: "";
+  display: block;
+  background-color: rgba($mobile-menu-overlay-panel-color, 0);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.slideout-panel-wrapper-open::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba($mobile-menu-overlay-panel-color, 0.4);
+  z-index: $mobile-menu-overlay-panel-zindex-value;
+}
+
+// Stops screen from moving left when the screen size increases while the mobile menu is still opened
+// @include media-query($screen-sm-max, null) {
+
+//   .slideout-panel-right {
+//     transform: none !important;
+//   }
+
+//   .slideout-panel::after {
+//     display: none;
+//   }
+// }

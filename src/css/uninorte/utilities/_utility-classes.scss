@@ -1,0 +1,56 @@
+// Utility Classes
+// --
+
+.is-clickable {
+  cursor: pointer !important;
+}
+
+/*.d-none {
+    display: none !important;
+}*/
+
+.is-fixed {
+  position: fixed !important;
+  width: 100%;
+}
+
+// Typography
+.ff-open-sans-bold {
+  font-family: $ff-open-sans-bold !important;
+}
+
+.ff-open-sans-regular {
+  font-family: $ff-open-sans-regular !important;
+}
+
+.ff-bebas-neue-bold {
+  font-family: $ff-bebas-neue-bold !important;
+}
+
+.ff-bebas-neue-regular {
+  font-family: $ff-bebas-neue-regular !important;
+}
+
+.ff-crimson-roman {
+  font-family: $ff-crimson-roman !important;
+}
+
+.ff-crimson-semibold {
+  font-family: $ff-crimson-semibold !important;
+}
+
+.ff-mallorylight {
+  font-family: $ff-mallorylight !important;
+}
+
+.ff-mallorylight-italic {
+  font-family: $ff-mallorylight-italic !important;
+}
+
+.ff-mallory-medium {
+  font-family: $ff-mallory-medium !important;
+}
+
+.ff-mallory-medium-italic {
+  font-family: $ff-mallory-medium-italic !important;
+}

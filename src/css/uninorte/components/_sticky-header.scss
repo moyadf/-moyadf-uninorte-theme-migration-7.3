@@ -1,0 +1,26 @@
+// Sticky Header
+// --
+
+.uni-sticky-header-spacing {
+  height: $sticky-header-spacing;
+
+  @include respond-to(phone) {
+    height: $sticky-header-mobile-spacing;
+  }
+
+  &.is-header-with-community-logo {
+    height: $sticky-header-spacing-header-with-community-logo;
+
+    &.only-with-site-name {
+      height: $sticky-header-spacing-header-with-only-site-name;
+    }
+  }
+}
+
+.uni-header-home-sticky__logo {
+  position: absolute;
+
+  .uni-svg-icon {
+    width: $header-home-logo-sticky-size;
+  }
+}

@@ -1,0 +1,204 @@
+.uninorte-heading {
+  width: 100%;
+  background: #fff;
+  font-family: "Open Sans", sans-serif !important;
+
+  .portlet-title-text {
+    display: none;
+  }
+
+  .uninorte__heading-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .uninorte-heading__middle {
+    .logo_uni {
+      display: none;
+    }
+
+    .uninorte-heading__nav {
+      list-style: none;
+      height: 100px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0;
+      width: 100%;
+      max-width: 1040px;
+      margin: 0 auto;
+
+      .uninorte-heading__item {
+        line-height: 1rem;
+        text-align: center;
+        width: 140px;
+
+        a {
+          color: #3c3c3b;
+          text-decoration: none;
+          word-break: break-word;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .uninorte__heading-bottom {
+    .uninorte-secondary-menu {
+      background: #1d1d1b;
+      width: 100%;
+
+      .uninorte-secondary-menu__list {
+        width: 100%;
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0;
+        height: auto;
+        list-style: none;
+        display: flex;
+        align-items: normal;
+        justify-content: center;
+
+        .uninorte-secondary-menu__item {
+          width: 150px;
+          min-width: 200px;
+          position: relative;
+          padding: 15px 30px;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          line-height: 1rem;
+          transition: all 0.2s ease-in;
+
+          .uninorte-secondary-menu__link {
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            word-break: break-word;
+            cursor: pointer;
+          }
+
+          &:hover {
+            background: #3c3c3b;
+          }
+
+          &:hover .uninorte-secondary-menu__sublist {
+            display: block;
+          }
+        }
+      }
+
+      .uninorte-secondary-menu__sublist {
+        display: none;
+        position: absolute;
+        top: 78px;
+        background: #fff;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        width: 200px;
+        padding: 0;
+        height: auto;
+        z-index: 2;
+
+        .uninorte-secondary-menu__subitem {
+          .uninorte-secondary-menu__sublink {
+            font-size: 14px;
+            color: #3c3c3b;
+            display: block;
+            text-decoration: none;
+            transition: all 0.2s ease-in;
+            opacity: 1;
+            white-space: normal;
+            padding: 10px 15px;
+
+            &:hover {
+              color: #fff;
+              background: #c00e3d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.uninorte-heading__radio {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+
+  .control {
+    border: none;
+    background: transparent;
+    outline: none;
+    margin: 0;
+    padding: 0 5px;
+
+    #play,
+    #pause {
+      width: 30px;
+      object-fit: contain;
+    }
+
+    .pause {
+      display: none;
+    }
+  }
+
+  .uniorte-heading__signal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+
+    .fm {
+      width: 45px;
+      object-fit: contain;
+    }
+
+    .signal {
+      width: 90px;
+      object-fit: contain;
+    }
+  }
+
+  .uniorte-heading__social {
+    .uninorte_social {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100px;
+      margin-left: 15px;
+    }
+  }
+}
+
+/** sticky **/
+.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  animation: smoothScroll 1s forwards;
+  width: 100%;
+  z-index: 5;
+  background: #fff !important;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
