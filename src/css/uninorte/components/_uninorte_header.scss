@@ -11,6 +11,55 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ebebeb;
+    padding: 0 50px;
+
+    .uninirte-heading__options {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .uninorte-search {
+        position: relative;
+        .uninorte-search__icon img {
+          width: 22px;
+        }
+
+        .uninorte-search__box {
+          display: none;
+          position: absolute;
+          width: 190px;
+          right: 0;
+          background-color: #ebebeb;
+
+          .portlet-decorate .portlet-content {
+            background-color: inherit;
+            padding: 10px;
+          }
+
+          .uninorte-search__box-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+          }
+        }
+
+        .uninorte-search__box.show-search {
+          display: block;
+          top: 30px;
+          animation: 300ms ease displayBox 1;
+          right: 0;
+        }
+
+        @keyframes displayBox {
+          from {
+            transform: scaleY(0);
+          }
+        }
+      }
+    }
   }
 
   .uninorte-heading__middle {

@@ -1,0 +1,109 @@
+.show-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  /** Header **/
+
+  /** Footer **/
+  .uninorte-footer__contact {
+    .uninorte-footer__logo {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+
+      .uninorte__logo,
+      .uninorte__separator {
+        width: 250px;
+        object-fit: contain;
+      }
+
+      .uninorte-location {
+        display: block;
+        color: #fff;
+        margin: 20px 0;
+        text-align: center;
+      }
+    }
+
+    .uninorte__links li a {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #fff;
+
+      img {
+        width: 40px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .uninorte-footer__links {
+    .uninorte-footer__mobile {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      margin: 15px auto;
+      text-align: center;
+
+      .uninorte-footer__mobile-li {
+        padding: 10px 0;
+
+        .uninorte-footer__mobile-a {
+          color: #fff;
+          text-decoration: none;
+
+          i {
+            font-size: 0.95rem;
+            vertical-align: middle;
+          }
+        }
+
+        .uninorte-footer__mobile-sub {
+          display: none;
+        }
+      }
+
+      .uninorte-footer__mobile-a.active-footer {
+        display: block;
+      }
+
+      .uninorte-footer__mobile-sub-a {
+        color: #fbfbf8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        text-decoration: none;
+        word-break: break-word;
+      }
+    }
+  }
+
+  .uninorte-footer__social {
+    margin: 0 auto;
+    max-width: 200px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li a {
+        font-size: 1.75rem;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
