@@ -228,6 +228,14 @@
       align-items: center;
       width: 100px;
       margin-left: 15px;
+
+      li {
+        a {
+          i {
+            color: #000;
+          }
+        }
+      }
     }
   }
 }

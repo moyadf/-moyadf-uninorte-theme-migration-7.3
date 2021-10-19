@@ -25,25 +25,25 @@
           <ul class="uninorte_social">
             <li>
               <a href="https://www.facebook.com/uninortecolombia">
-                <img src="${images_folder}/uninorte/header/entrega-16.png">
+                <i class="fab fa-facebook-f"></i>
               </a>
             </li>
 
             <li>
               <a href="https://www.instagram.com/uninorteco">
-                <img src="${images_folder}/uninorte/header/entrega-18.png">
+                <i class="fab fa-instagram"></i>
               </a>
             </li>
 
             <li>
               <a href="https://twitter.com/uninorteco">
-                <img src="${images_folder}/uninorte/header/entrega-17.png">
+                <i class="fab fa-twitter"></i>
               </a>
             </li>
 
             <li>
               <a href="https://www.youtube.com/c/UninorteAcad%C3%A9mico">
-                <img src="${images_folder}/uninorte/header/entrega-19.png">
+                <i class="fab fa-youtube"></i>
               </a>
             </li>
 

@@ -77,12 +77,20 @@
 
   <div class="uninorte-footer__social">
     <ul>
-      <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href=""><i class="fab fa-instagram"></i></a></li>
-      <li><a href=""><i class="fab fa-twitter"></i></a></li>
-      <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a href=""><i class="fab fa-youtube"></i></a></li>
-      <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="https://www.facebook.com/uninortecolombia"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com/uninorteco"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://twitter.com/uninorteco"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://co.linkedin.com/school/universidad-del-norte"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.youtube.com/c/UninorteAcad%C3%A9mico"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="https://wa.me/573145905480"><i class="fab fa-whatsapp"></i></a></li>
     </ul>
   </div>
+
+  <span class="uninorte-footer__directory">
+    <a href="https://www.uninorte.edu.co/web/soyuninorte/directorio-de-redes">
+      Directorio de redes
+    </a>
+  </span>
+
+  <small class="uninorte-footer__watch">Vigilada Mineducación</small>
 </div>
