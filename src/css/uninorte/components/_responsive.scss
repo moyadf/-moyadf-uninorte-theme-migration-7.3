@@ -58,6 +58,10 @@
       .logo_uni {
         display: none;
       }
+
+      .logo_uni-big {
+        margin: 0 15px;
+      }
     }
 
     .uninorte-navbar-search-menu-box {
@@ -138,15 +142,19 @@
     background-color: #ebebeb;
     z-index: 100;
     transition: 0.4s;
+    padding-bottom: 50px;
 
-    .uninorte-sidebar__portals {
+    .uninorte-sidebar__portals,
+    .uninorte-sidebar__language {
       background-color: #1d1d1b;
 
-      .uninorte-sidebar__portals-nav {
-        padding: 10px;
-        .uninorte-sidebar__portals-li {
+      .uninorte-sidebar__portals-nav,
+      .uninorte-sidebar__language-nav {
+        .uninorte-sidebar__portals-li,
+        .uninorte-sidebar__language-li {
           padding: 5px;
-          .uninorte-sidebar__portals-a {
+          .uninorte-sidebar__portals-a,
+          .uninorte-sidebar__language-a {
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -162,12 +170,15 @@
             }
           }
 
-          .uninorte-sidebar__portals-sub {
+          .uninorte-sidebar__portals-sub,
+          .uninorte-sidebar__language-sub {
             display: flex;
             flex-flow: column;
             align-items: flex-end;
-            .uninorte-sidebar__portals-sub-li {
-              .uninorte-sidebar__portals-sub-a {
+            .uninorte-sidebar__portals-sub-li,
+            .uninorte-sidebar__language-sub-li {
+              .uninorte-sidebar__portals-sub-a,
+              .uninorte-sidebar__language-sub-a {
                 color: #fff;
                 font-size: 14px;
                 font-weight: 200;
@@ -192,7 +203,7 @@
 
           .uninorte-sidebar__mobile-li {
             .uninorte-sidebar__mobile-a {
-              margin: 10px 15px 10px 0;
+              margin: 10px 15px;
               display: block;
               color: #1d1d1b;
               text-decoration: none;
@@ -206,7 +217,7 @@
 
               .uninorte-sidebar__mobile-sub-li {
                 .uninorte-sidebar__mobile-sub-a {
-                  margin: 10px 15px 10px 0;
+                  margin: 10px 15px;
                   display: block;
                   color: #1d1d1b;
                   text-decoration: none;
@@ -395,5 +406,40 @@
     justify-content: center;
     color: #fff;
     font-size: 65%;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 450px) {
+  .uninorte-navbar-mobile.move {
+    padding: 20px;
+    right: 260px;
+  }
+
+  .uninorte-sidebar {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .uninorte-sidebar {
+    width: auto;
+  }
+
+  .uninorte-navbar-mobile.move {
+    right: 260px;
+    padding: 10px;
+  }
+
+  .uninorte-navbar-mobile {
+    .uninorte-navbar-mobile__logo {
+      .logo_uni-big {
+        display: none;
+      }
+
+      .logo_uni {
+        display: block;
+        margin: 0 15px;
+      }
+    }
   }
 }

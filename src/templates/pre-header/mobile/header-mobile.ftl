@@ -2,9 +2,9 @@
   <div id="headerContainer" class="uninorte-navbar-mobile">
 
     <div class="uninorte-navbar-mobile__logo">
-      <a class="${logo_css_class} align-items-center d-md-inline-flex d-sm-none d-none logo-md"
-        href="${uninorte_logo_url}" title="<@liferay.language_format arguments="" key=" go-to-x" />">
-      <img id="logo_uni_header" alt="${logo_description}" class="mr-2" height="56" src="${site_logo}" />
+      <a class="${logo_css_class} align-items-center d-md-inline-flex logo-md" href="${uninorte_logo_url}"
+        title="<@liferay.language_format arguments="" key=" go-to-x" />">
+      <img id="logo_uni_header" alt="${logo_description}" class="mr-2 logo_uni-big" height="56" src="${site_logo}" />
       <img id="logo_uni_sticky" alt="${logo_description}" class="mr-2 logo_uni" height="56"
         src="${images_folder}/uninorte/header/uni-logo-symbol.svg" />
       </a>
@@ -35,6 +35,30 @@
   </div>
 
   <div class="uninorte-sidebar" id="sidebar">
+    <div class="uninorte-sidebar__language">
+      <ul class="uninorte-sidebar__language-nav">
+        <li class="uninorte-sidebar__language-li">
+          <a id="showChild" class="uninorte-sidebar__language-a">
+            <span>Idiomas</span>
+            <img src="https://www.uninorte.edu.co/uninorte-theme/images/uninorte/icons/ico-idiomas-white.svg"
+              alt="Icon portales">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </a>
+
+          <ul id="child-item" class="uninorte-sidebar__language-sub">
+            <li class="uninorte-sidebar__language-sub-li">
+              <a class="uninorte-sidebar__language-sub-a" href="/">Español</a>
+            </li>
+            <li class="uninorte-sidebar__language-sub-li">
+              <a class="uninorte-sidebar__language-sub-a" href="/en/web/englishversion">
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
     <div class="uninorte-sidebar__portals">
 
       <ul class="uninorte-sidebar__portals-nav">

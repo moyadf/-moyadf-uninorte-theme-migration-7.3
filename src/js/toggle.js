@@ -16,8 +16,8 @@ function removeClassShow () {
 
 /** Footer **/
 
-$('.uninorte-footer__mobile-li ul, .uninorte-sidebar__mobile-li ul, .uninorte-sidebar__portals-li ul').hide();
-$(".uninorte-footer__mobile-li a, .uninorte-sidebar__mobile-li a, .uninorte-sidebar__portals-li a").click(function(e) {
+$('.uninorte-footer__mobile-li ul, .uninorte-sidebar__mobile-li ul, .uninorte-sidebar__portals-li ul, .uninorte-sidebar__language-li ul').hide();
+$(".uninorte-footer__mobile-li a, .uninorte-sidebar__mobile-li a, .uninorte-sidebar__portals-li a, .uninorte-sidebar__language-li a").click(function(e) {
   e.stopPropagation()
   const $parentLI = $(this).closest("li");
   const $other = $parentLI.siblings();
