@@ -9,33 +9,15 @@ const showBoxSearch = (toggleId, togglenavId) => {
   }
 }
 
-showBoxSearch('uninorte-search__icon', 'uninorte-search__box');
-
 function removeClassShow () {
   const classSearch = document.getElementById("uninorte-search__box");
   classSearch.classList.remove("show-search");
 }
-document.getElementById("close-search").addEventListener("click", removeClassShow);
 
-/** Footer Mobile **/
-/*const links = document.querySelectorAll('.uninorte-footer__mobile li a');
+/** Footer **/
 
-links.forEach((link) => {
-  link.addEventListener('click', () => {
-    const notClickedLinks = Array.from(links).filter((notClickedLink) => {
-      return notClickedLink !== link;
-    });
-
-    notClickedLinks.forEach((notClickedLink) => {
-      notClickedLink.classList.remove('active');
-    });
-
-    link.classList.add('active');
-  });
-});*/
-
-$('.uninorte-footer__mobile-li ul').hide();
-$(".uninorte-footer__mobile-li a").click(function(e) {
+$('.uninorte-footer__mobile-li ul, .uninorte-sidebar__mobile-li ul, .uninorte-sidebar__portals-li ul').hide();
+$(".uninorte-footer__mobile-li a, .uninorte-sidebar__mobile-li a, .uninorte-sidebar__portals-li a").click(function(e) {
   e.stopPropagation()
   const $parentLI = $(this).closest("li");
   const $other = $parentLI.siblings();
@@ -47,3 +29,33 @@ $(".uninorte-footer__mobile-li a").click(function(e) {
   $myUL.slideToggle("100");
   $myToggle.toggleClass("fa-caret-up fa-caret-down");
 });
+
+const showBoxSearchMb = (toggleId, togglenavId) => {
+  const toggle = document.getElementById(toggleId),
+  nav = document.getElementById(togglenavId);
+
+  if(toggle && nav) {
+    toggle.addEventListener('click', ()=> {
+      nav.classList.toggle('show-search')
+    })
+  }
+}
+
+function removeClassShowMb () {
+  const classSearch = document.getElementById("uninorte-search__box-mb");
+  classSearch.classList.remove("show-search");
+}
+
+const test = document.getElementById("close-search-mb");
+if (test) {
+  test.addEventListener("click", removeClassShowMb);
+}
+
+window.onload=function() {
+  showBoxSearch('uninorte-search__icon', 'uninorte-search__box');
+  document.getElementById("close-search").addEventListener("click", removeClassShow);
+
+  showBoxSearchMb('uninorte-search__icon-mb', 'uninorte-search__box-mb');
+  
+
+}

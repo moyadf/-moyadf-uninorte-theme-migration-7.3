@@ -25,3 +25,27 @@ function stickyNavigation() {
 }
 
 window.addEventListener('scroll', stickyNavigation);
+
+
+/*==================== SHOW NAVBAR MOBILE ====================*/
+const showMenu = (headerToggle, navbarId) =>{
+    const toggleBtn = document.getElementById(headerToggle),
+    nav = document.getElementById(navbarId)
+    // Validate that variables exist
+    if(headerToggle && navbarId){
+        toggleBtn.addEventListener('click', ()=>{
+            // We add the show-menu class to the div tag with the nav__menu class
+            nav.classList.toggle('show-menu')
+            // change icon
+            toggleBtn.classList.toggle('fa-times')
+
+            const headerContainer = document.getElementById('headerContainer');
+            headerContainer.classList.toggle('move')
+
+            const container = document.getElementById('wrapper');
+            container.classList.toggle('overflow-uni-nav')
+        })
+    }
+}
+showMenu('nav-icon','sidebar')
+

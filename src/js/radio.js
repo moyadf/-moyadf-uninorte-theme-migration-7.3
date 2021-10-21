@@ -5,11 +5,9 @@ document.getElementById('myAudio').addEventListener('click', function (e) {
 }, false);
 
 function audioControl() {
-    var playdiv = document.getElementById('playdiv');
-    var pausediv = document.getElementById('pausediv');
+    var pause = document.getElementById('pause');
+    var play = document.getElementById('play');
     var myAudio = document.getElementById('myAudio');
-    var label = document.getElementById('live');
-
 
     if (myAudio.paused) {
         myAudio.play();

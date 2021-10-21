@@ -5,22 +5,7 @@
     
     <div class="uninorte__heading-top">
       <div class=" uninorte-heading__radio">
-        <audio id="myAudio" preload="metadata">
-          <source src="https://cactus2.uninorte.edu.co/;stream.mp3" />
-          Unfortunately your browser doesn't support html5
-          audio streaming, please update your browser.
-        </audio>
-
-        <button class="control" id="control" onclick="audioControl()">
-          <img alt="play" id="play" class="play" src="${images_folder}/uninorte/header/entrega-22.png" />
-          <img alt="pause" id="pause" class="pause" src="${images_folder}/uninorte/header/entrega-23.png" />
-        </button>
-
-        <div class="uniorte-heading__signal">
-          <img class="fm" src="${images_folder}/uninorte/header/entrega-20.png" />
-          <img class="signal" src="${images_folder}/uninorte/header/entrega-29.png" />
-        </div>
-
+        <#include "${full_templates_path}/pre-header/radio.ftl" />
         <div class="uniorte-heading__social">
           <ul class="uninorte_social">
             <li>
@@ -58,18 +43,7 @@
         <div class="uninorte-portals uni-portales uni-pre-header__menu">
           <#include "${full_templates_path}/pre-header/portales.ftl" />
         </div>
-        <div class="uninorte-search">
-          <div id="uninorte-search__icon" class="uninorte-search__icon">
-            <img src="${images_folder}/uninorte/icons/ico-busca.svg" />
-          </div>
-          <div id="uninorte-search__box" class="uninorte-search__box">
-            <div class="uninorte-search__box-inner">
-              <@liferay.search />
-              <i id="close-search" class="fas fa-times-circle"></i>
-            </div>
-
-          </div>
-        </div>
+        <#include "${full_templates_path}/pre-header/search.ftl" />
       </div>
 
     </div>
