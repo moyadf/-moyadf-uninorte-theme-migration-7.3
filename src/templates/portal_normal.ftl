@@ -57,7 +57,11 @@
 <script src="${javascript_folder}/vendors/bootstrap.min.js"></script>
 <script src="${javascript_folder}/vendors/slideout.min.js" type="text/javascript"></script>
 
-<script src="${javascript_folder}/main.js"></script>
+<#if is_signed_in>
+	<!-- script main no se mostrara para no generar conflictos con la interacción en Liferay -->
+<#else>
+	<script src="${javascript_folder}/main.js"></script>
+</#if>
 <script src="https://kit.fontawesome.com/4ff096c9e6.js" crossorigin="anonymous"></script>
 <script src="${javascript_folder}/radio.js"></script>
 <script src="${javascript_folder}/sticky.js"></script>
