@@ -27,11 +27,22 @@
             </li>
 
             <li>
+              <a href="https://co.linkedin.com/school/universidad-del-norte ">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li>
               <a href="https://www.youtube.com/c/UninorteAcad%C3%A9mico">
                 <i class="fab fa-youtube"></i>
               </a>
             </li>
 
+            <li>
+              <a href="https://wa.me/573145905480">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
