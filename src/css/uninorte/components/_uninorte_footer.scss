@@ -1,5 +1,16 @@
 .uninorte-footer {
   background-color: #1d1d1b;
+  position: relative;
+
+  .min-education {
+    position: absolute;
+    right: -45px;
+    color: #fff;
+    font-style: italic;
+    top: 50%;
+    direction: inherit;
+    transform: rotate(-90deg);
+  }
   .uninorte-footer__container {
     max-width: 1040px;
     max-width: 1140px;
@@ -89,6 +100,9 @@
       }
 
       .uninorte-footer__item.item-2 {
+        > .row {
+          margin: 0;
+        }
         .uninorte-footer__category {
           display: flex;
           flex-flow: column;

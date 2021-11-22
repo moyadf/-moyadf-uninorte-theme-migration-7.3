@@ -47,6 +47,7 @@
 
 	<footer id="footer" class="uninorte-footer" role="contentinfo">
 		<@liferay.navigation_menu instance_id="main_navigation_menu" default_preferences="${freeMarkerPortletPreferences}"/>
+		<small class="min-education">Vigilada Mineducación</small>
 	</footer>
 </div>
 

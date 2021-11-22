@@ -301,6 +301,11 @@
   }
 
   /** Footer **/
+  .uninorte-footer {
+    .min-education {
+      display: none;
+    }
+  }
   .uninorte-footer__contact {
     .uninorte-footer__logo {
       display: flex;
