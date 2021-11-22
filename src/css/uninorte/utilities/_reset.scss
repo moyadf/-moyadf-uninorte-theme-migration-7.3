@@ -1,11 +1,15 @@
 // Resetter
 // --
 
-/*ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}*/
+.hidden-desktop ul,
+.uninorte__links,
+.uninorte-footer__mobile-li,
+.uninorte-footer__social ul,
+.uninorte-footer__mobile-sub {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 fieldset[disabled] .form-control,
 .form-control[disabled] {
