@@ -176,6 +176,10 @@
           }
         }
       }
+
+      .uninorte-down {
+        vertical-align: middle;
+      }
     }
   }
 }
@@ -221,6 +225,7 @@
   }
 
   .uniorte-heading__social {
+    position: relative;
     .uninorte_social {
       list-style: none;
       padding: 0;
@@ -231,6 +236,14 @@
       width: 100px;
       width: 130px;
       margin-left: 15px;
+
+      &:after {
+        content: "|";
+        position: absolute;
+        top: 0;
+        left: 6px;
+        color: #9d9b9b;
+      }
 
       li {
         a {

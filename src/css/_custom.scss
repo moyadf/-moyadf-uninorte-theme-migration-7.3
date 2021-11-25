@@ -13,4 +13,8 @@
 @import "aui_variables";
 @import "uninorte-vendors";
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+body.signed-out {
+  font-family: "Open Sans", sans-serif;
+}

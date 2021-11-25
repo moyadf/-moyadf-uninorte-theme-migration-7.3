@@ -1,0 +1,187 @@
+<div class="uninorte-footer__container hidden-mobile">
+  <div class="uninorte-footer__columns">
+    <div class="uninorte-footer__item item-1">
+      <a class="uninorte-footer__logo" href="/" target="_self">
+        <img class="uninorte__logo" src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/logo.png" />
+
+        <img class="uninorte__separator"
+          src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/separador.png" />
+      </a>
+
+      <span class="uninorte-location">
+        km.5 vía Puerto Colombia<br>
+        Área Metropolitana de Barranquilla<br>
+        Colombia - Suramérica
+      </span>
+
+      <ul class="uninorte__links">
+        <li>
+          <a href="https://lineaeticauninorte.ethicsglobal.com/">
+            <img src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/telefono.png" />
+            <span>Línea ética</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.uninorte.edu.co/sugerencias">
+            <img src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/mail.png" />
+            <span>Buzón de sugerencias</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.uninorte.edu.co/canales-de-atencion">
+            <img src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/persona.png" />
+            <span>Otros canales de <br>contacto</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.uninorte.edu.co/web/tesoreria">
+            <img src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/web.png" />
+            <span>Pagos en línea</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="uninorte_social">
+        <li><a href="https://www.facebook.com/uninortecolombia"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/uninorteco"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/uninorteco"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://co.linkedin.com/school/universidad-del-norte"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.youtube.com/c/UninorteAcad%C3%A9mico"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="https://wa.me/573145905480"><i class="fab fa-whatsapp"></i></a></li>
+      </ul>
+
+      <small>
+        <a href="https://www.uninorte.edu.co/web/soyuninorte/directorio-de-redes">
+          Directorio de redes
+        </a>
+      </small>
+
+    </div>
+
+    <div class="uninorte-footer__item item-2">
+
+      <#list entries?chunk(3) as row>
+        <div class="row">
+          <#list row as item>
+            <div class="col-lg-4 col-sm-4">
+              <div class="uninorte-footer__category">
+                <a class="uninorte-footer-menu__link" href="${item.getURL()}">
+                  ${item.getName()}
+                </a>
+
+                <img class="uninorte__separator"
+                  src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/separador.png">
+              </div>
+              <#if item.hasChildren()>
+                <ul class="uninorte-footer-menu__sublist">
+                  <#list item.getChildren() as item_child>
+                    <li class="uninorte-footer-menu__subitem">
+                      <a class="uninorte-footer-menu__sublink" href="${item_child.getURL()}">
+                        ${item_child.getName()}
+                      </a>
+                    </li>
+                  </#list>
+                </ul>
+              </#if>
+            </div>
+          </#list>
+        </div>
+        <#else>
+          <div class="something"></div>
+      </#list>
+    </div>
+  </div>
+</div>
+
+<#-- Mobile -->
+  <div class="uninorte-footer__container show-mobile">
+    <div class="uninorte-footer__contact">
+      <div class="uninorte-footer__logo">
+        <img class="uninorte__logo" src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/logo.png" />
+
+        <img class="uninorte__separator"
+          src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/separador.png" />
+
+        <span class="uninorte-location">
+          km.5 vía Puerto Colombia<br>
+          Área Metropolitana de Barranquilla<br>
+          Colombia - Suramérica
+        </span>
+
+        <ul class="uninorte__links">
+          <li>
+            <a href="https://lineaeticauninorte.ethicsglobal.com/">
+              <img src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/telefono.png" />
+              <span>Línea ética</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.uninorte.edu.co/sugerencias">
+              <img src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/mail.png" />
+              <span>Buzón de sugerencias</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.uninorte.edu.co/canales-de-atencion">
+              <img src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/persona.png" />
+              <span>Otros canales de <br>contacto</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.uninorte.edu.co/web/tesoreria">
+              <img src="/o/uninorte-theme/images/uninorte/footer_un/footer_redesign/web.png" />
+              <span>Pagos en línea</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="uninorte-footer__links">
+
+      <#if entries?has_content>
+        <ul class="uninorte-footer__mobile">
+          <#list entries as navigationEntry>
+            <li class="uninorte-footer__mobile-li">
+              <a id="showChild" class="uninorte-footer__mobile-a">
+                ${navigationEntry.getName()}
+                <i class="fas fa-chevron-down"></i>
+              </a>
+
+              <#if navigationEntry.hasChildren()>
+                <ul id="child-item" class="uninorte-footer__mobile-sub">
+                  <#list navigationEntry.getChildren() as navigationEntry_child>
+                    <li class="uninorte-footer__mobile-sub-li">
+                      <a class="uninorte-footer__mobile-sub-a" href="${navigationEntry_child.getURL()}">
+                        ${navigationEntry_child.getName()}
+                      </a>
+                    </li>
+                  </#list>
+                </ul>
+              </#if>
+            </li>
+          </#list>
+        </ul>
+      </#if>
+    </div>
+
+    <div class="uninorte-footer__social">
+      <ul>
+        <li><a href="https://www.facebook.com/uninortecolombia"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/uninorteco"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/uninorteco"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://co.linkedin.com/school/universidad-del-norte"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.youtube.com/c/UninorteAcad%C3%A9mico"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="https://wa.me/573145905480"><i class="fab fa-whatsapp"></i></a></li>
+      </ul>
+    </div>
+
+    <span class="uninorte-footer__directory">
+      <a href="https://www.uninorte.edu.co/web/soyuninorte/directorio-de-redes">
+        Directorio de redes
+      </a>
+    </span>
+
+    <small class="uninorte-footer__watch">Vigilada Mineducación</small>
+  </div>

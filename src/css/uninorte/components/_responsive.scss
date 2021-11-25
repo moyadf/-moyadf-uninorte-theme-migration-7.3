@@ -67,8 +67,10 @@
     .uninorte-navbar-search-menu-box {
       display: flex;
       justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       width: 125px;
+      width: 130px;
 
       .uninorte-search__icon {
         img {
@@ -211,7 +213,7 @@
               display: block;
               color: #1d1d1b;
               text-decoration: none;
-              font-size: 14px;
+              font-size: 15px;
               font-weight: 200;
             }
 
@@ -225,7 +227,7 @@
                   display: block;
                   color: #1d1d1b;
                   text-decoration: none;
-                  font-size: 14px;
+                  font-size: 15px;
                   font-weight: 200;
                 }
               }
@@ -236,16 +238,22 @@
     }
 
     .uninorte-sidebar__social-radio {
+      margin: 30px 10px;
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
       .uninorte-sidebar__social {
-        max-width: 200px;
+        /*max-width: 200px;
         margin: 20px auto;
-        margin: 0 auto;
+        margin: 0 auto;*/
 
         ul {
           display: flex;
           justify-content: space-between;
           align-items: center;
           border-bottom: 1px solid #1d1d1b;
+          width: 220px;
+          margin: 0 10px;
 
           li {
             a {
@@ -261,14 +269,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        align-items: baseline;
+        padding: 15px 10px;
         .control {
           border: none;
           outline: none;
 
           #play,
           #pause {
-            width: 25px;
+            width: 30px;
             object-fit: contain;
           }
 
@@ -280,10 +289,12 @@
         .uniorte-heading__signal {
           .fm {
             width: 50px;
+            width: 70px;
           }
 
           .signal {
             width: 100px;
+            width: 135px;
           }
         }
       }
