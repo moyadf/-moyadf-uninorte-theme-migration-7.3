@@ -1,14 +1,35 @@
-<a class="uni-pre-header__menu-item dropdown-toggle" data-toggle="dropdown" href="#">
+<!--<a class="uni-pre-header__menu-item dropdown-toggle" data-toggle="dropdown" href="#">
   <img class="uni-svg-icon uni-icon-pre-header" src="${images_folder}/uninorte/icons/ico-idiomas.svg"
     alt="Icon idiomas">
   Idiomas
   <span class="caret"></span>
-</a>
+</a>-->
 
-<ul class="dropdown-menu">
+<div id="google_translate_element"></div>
 
-  <!--<div id="google_translate_element"></div>-->
-</ul>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
+
+</script>
+
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  $(document).ready(function () {
+    $('#google_translate_element').bind('DOMNodeInserted', function (event) {
+      $('.goog-te-menu-value span:first').html('Idiomas');
+      $('.goog-te-menu-frame.skiptranslate').on('load', function () {
+        setTimeout(function () {
+          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('Idiomas');
+        }, 100);
+      });
+    });
+  });
+</script>
+
 <style type="text/css">
   /* OVERRIDE GOOGLE TRANSLATE WIDGET CSS BEGIN */
 
@@ -32,7 +53,9 @@
   }
 
   div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover {
+
     color: #3c3c3b;
+
   }
 
   .goog-te-gadget-icon {
@@ -105,17 +128,10 @@
   /* OVERRIDE GOOGLE TRANSLATE WIDGET CSS END */
 </style>
 
-<!--<script type="text/javascript" class="google-translate"
-  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script>
-  $(document).ready(function () {
-    $('#google_translate_element').bind('DOMNodeInserted', function (event) {
-      $('.goog-te-menu-value span:first').html('Idiomas');
-      $('.goog-te-menu-frame.skiptranslate').load(function () {
-        setTimeout(function () {
-          $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('Idiomas');
-        }, 100);
-      });
-    });
-  });
-</script>-->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+  }
+
+</script>

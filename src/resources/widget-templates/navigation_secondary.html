@@ -1,0 +1,27 @@
+<div class="uninorte-secondary-menu">
+  <#if entries?has_content>
+    <ul class="uninorte-secondary-menu__list">
+      <#list entries as navigationEntry>
+        <li class="uninorte-secondary-menu__item">
+          <a class="uninorte-secondary-menu__link" href="${navigationEntry.getURL()}">
+            ${navigationEntry.getName()}
+            <i class="uninorte-down fas fa-caret-down"></i>
+          </a>
+
+          <#if navigationEntry.hasChildren()>
+            <ul class="uninorte-secondary-menu__sublist">
+              <#list navigationEntry.getChildren() as navigationEntry_child>
+                <li class="uninorte-secondary-menu__subitem">
+                  <a class="uninorte-secondary-menu__sublink" href="${navigationEntry_child.getURL()}">
+                    ${navigationEntry_child.getName()}
+                  </a>
+                </li>
+              </#list>
+            </ul>
+          </#if>
+
+        </li>
+      </#list>
+    </ul>
+  </#if>
+</div>
