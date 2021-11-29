@@ -11,6 +11,10 @@
   margin: 0;
 }
 
+body {
+  background-color: inherit;
+}
+
 fieldset[disabled] .form-control,
 .form-control[disabled] {
   color: inherit;

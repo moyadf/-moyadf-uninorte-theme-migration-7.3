@@ -39,9 +39,9 @@
       <ul class="uninorte-sidebar__language-nav">
         <li class="uninorte-sidebar__language-li">
           <a id="showChild" class="uninorte-sidebar__language-a">
-            <span>Idiomas</span>
             <img src="https://www.uninorte.edu.co/uninorte-theme/images/uninorte/icons/ico-idiomas-white.svg"
               alt="Icon portales">
+            <span>Idiomas</span>
             <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </a>
 
@@ -64,9 +64,9 @@
       <ul class="uninorte-sidebar__portals-nav">
         <li class="uninorte-sidebar__portals-li">
           <a id="showChild" class="uninorte-sidebar__portals-a">
-            <span>Portales</span>
-            <img src="https://www.uninorte.edu.co/uninorte-theme/images/uninorte/icons/ico-portales-white.svg"
+          <img src="https://www.uninorte.edu.co/uninorte-theme/images/uninorte/icons/ico-portales-white.svg"
               alt="Icon portales">
+            <span>Portales</span>
             <i class="fas fa-chevron-down" aria-hidden="true"></i>
           </a>
 
