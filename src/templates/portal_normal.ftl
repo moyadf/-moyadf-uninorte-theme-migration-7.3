@@ -21,6 +21,8 @@
 
 <@liferay.control_menu />
 
+<#include "${full_templates_path}/pre-header/mobile/nav-mobile.ftl"/>
+
 <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">
 		<div id="heading" class="uninorte">
@@ -67,6 +69,7 @@
 <script src="${javascript_folder}/radio.js"></script>
 <script src="${javascript_folder}/sticky.js"></script>
 <script src="${javascript_folder}/toggle.js"></script>
+<script src="${javascript_folder}/mobileMenu.js"></script>
 
 </body>
 

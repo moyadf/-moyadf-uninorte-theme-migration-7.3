@@ -28,7 +28,7 @@ window.addEventListener('scroll', stickyNavigation);
 
 
 /*==================== SHOW NAVBAR MOBILE ====================*/
-const showMenu = (headerToggle, navbarId) =>{
+/*const showMenu = (headerToggle, navbarId) =>{
     const toggleBtn = document.getElementById(headerToggle),
     nav = document.getElementById(navbarId)
     // Validate that variables exist
@@ -47,5 +47,5 @@ const showMenu = (headerToggle, navbarId) =>{
         })
     }
 }
-showMenu('nav-icon','sidebar')
+showMenu('nav-icon','sidebar')*/
 

@@ -5,6 +5,12 @@
   display: none;
 }
 
+.uninorte-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (min-width: 940px) and (max-width: 1300px) {
   .uninorte-heading {
     .uninorte__heading-bottom {
