@@ -40,6 +40,10 @@
   div#google_translate_element div.goog-te-gadget-simple {
     border: none;
     background-color: transparent;
+    padding: 0 !important;
+    font-size: .875rem;
+    color: #3c3c3b;
+    font-weight: 700;
     /*background-color: #17548d;*/
     /*#e3e3ff*/
   }
@@ -122,7 +126,7 @@
   }
 
   .goog-te-gadget {
-    padding-top: 4px !important;
+    padding-top: 0 !important;
   }
 
   /* OVERRIDE GOOGLE TRANSLATE WIDGET CSS END */
