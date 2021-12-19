@@ -126,6 +126,9 @@
         }
       }
 
+      .uninorte-navbar__toggle {
+        touch-action: none;
+      }
       .uninorte-search__icon i,
       .uninorte-navbar__toggle i {
         font-size: 1.495rem;
