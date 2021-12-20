@@ -57,6 +57,11 @@
 
 <@liferay_util["include"] page=bottom_include />
 
+<script>
+    Liferay.Loader.define._amd = Liferay.Loader.define.amd;
+    Liferay.Loader.define.amd = false;
+</script>
+
 <script src="${javascript_folder}/vendors/bootstrap.min.js"></script>
 <script src="${javascript_folder}/vendors/slideout.min.js" type="text/javascript"></script>
 
@@ -70,6 +75,11 @@
 <script src="${javascript_folder}/sticky.js"></script>
 <script src="${javascript_folder}/toggle.js"></script>
 <script src="${javascript_folder}/mobileMenu.js"></script>
+<script src="${javascript_folder}/owl.carousel.min.js"></script>
+
+<script>
+    Liferay.Loader.define.amd = Liferay.Loader.define._amd;
+</script>
 
 </body>
 
