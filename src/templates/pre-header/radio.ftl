@@ -1,7 +1,11 @@
-<audio id="myAudio" preload="metadata">
+<!--<audio id="myAudio" preload="metadata">
   <source src="https://cactus2.uninorte.edu.co/;stream.mp3" />
   Unfortunately your browser doesn't support html5
   audio streaming, please update your browser.
+</audio>-->
+<audio id="myAudio" preload="metadata" controls style="width:0;">
+    <source src="https://cactus2.uninorte.edu.co/audio/stream.mp3"type="audio/mpeg">
+    Your browser does not support the audio element.
 </audio>
 
 <button class="control" id="control" onclick="audioControl()">
