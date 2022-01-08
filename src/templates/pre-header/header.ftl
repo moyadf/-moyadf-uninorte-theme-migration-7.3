@@ -75,7 +75,7 @@
           <a href='${estudia_con_nosotros_url}' target="${tipo_target_url}">${estudia_con_nosotros_name}</a>
         </li>
         <li class="uninorte-heading__logo">
-          <a class="${logo_css_class} align-items-center d-md-inline-flex d-sm-none d-none-uni logo-md"
+          <a class="${logo_css_class} align-items-center d-md-inline-flex d-sm-none logo-md"
             href="${uninorte_logo_url}" title="<@liferay.language_format arguments="" key=" go-to-x" />">
           <img id="logo_uni_header" alt="${logo_description}" class="mr-2" height="56" src="${site_logo}" />
           <img id="logo_uni_sticky" alt="${logo_description}" class="mr-2 logo_uni" height="56"

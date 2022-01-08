@@ -98,6 +98,7 @@
           width: 190px;
           right: 0;
           background-color: #ebebeb;
+          z-index: 1;
 
           .portlet-decorate .portlet-content {
             background-color: inherit;
@@ -194,6 +195,7 @@
             display: flex;
             flex-flow: column;
             align-items: flex-end;
+            margin-top: 1rem;
             .uninorte-sidebar__portals-sub-li,
             .uninorte-sidebar__language-sub-li {
               .uninorte-sidebar__portals-sub-a,
