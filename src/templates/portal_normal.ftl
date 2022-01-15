@@ -8,7 +8,6 @@
 	<title>${html_title}</title>
 
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
-	<script src="${javascript_folder}/vendors/jquery-min.js"></script>
 
 	<@liferay_util["include"] page=top_head_include />
 </head>
@@ -76,6 +75,20 @@
 <script src="${javascript_folder}/toggle.js"></script>
 <script src="${javascript_folder}/mobileMenu.js"></script>
 <script src="${javascript_folder}/owl.carousel.min.js"></script>
+
+
+
+<script async src="https://cse.google.com/cse.js?cx=007310195106118080878:f_4qnpuqgu4"></script>
+
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({ includedLanguages: 'es,en,fr,de' }, 'google_translate_element');
+	}
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="${javascript_folder}/google_translate.js"></script>
+
 
 <script>
     Liferay.Loader.define.amd = Liferay.Loader.define._amd;
