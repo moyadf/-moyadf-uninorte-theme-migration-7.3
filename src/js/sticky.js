@@ -1,7 +1,11 @@
-const header = document.getElementById("heading-uninorte");
-const headerMobile = document.getElementById("headerContainer");
-const logo_header = document.getElementById("logo_uni_header");
-const logo_sticky = document.getElementById("logo_uni_sticky");
+
+$( document ).ready(function() {
+
+
+var header = document.getElementById("heading-uninorte");
+var headerMobile = document.getElementById("headerContainer");
+var logo_header = document.getElementById("logo_uni_header");
+var logo_sticky = document.getElementById("logo_uni_sticky");
 
 addClassHeader = () => {
   header.classList.add("sticky");
@@ -27,3 +31,6 @@ function stickyNavigation() {
 }
 
 window.addEventListener("scroll", stickyNavigation);
+
+
+});
