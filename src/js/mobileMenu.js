@@ -2,40 +2,39 @@
  * Mobile Menu Plugin instance
  */
 
-var mobileMenuTarget = document.getElementById('sidebar');
+var mobileMenuTarget = document.getElementById("sidebar");
 
-if(mobileMenuTarget) {
-
+if (mobileMenuTarget) {
   var slideout = new Slideout({
-    'panel': document.getElementById('wrapper'),
-    'menu': mobileMenuTarget,
-    'padding': 300, // must be synced with $mobile-menu-size variable value on SASS settings.
-    'tolerance': 70,
-    'side': 'right'
+    panel: document.getElementById("wrapper"),
+    menu: mobileMenuTarget,
+    padding: 300, // must be synced with $mobile-menu-size variable value on SASS settings.
+    tolerance: 70,
+    side: "right",
   });
 
   // Avoid blinking menu when page is loaded
-  slideout.on("beforeopen", function() {
+  slideout.on("beforeopen", function () {
     checkVisibility(mobileMenuTarget);
   });
 
   // Avoid blinking menu with touch events
-  slideout.on('translatestart', function() {
+  slideout.on("translatestart", function () {
     checkVisibility(mobileMenuTarget);
   });
 
-  var checkVisibility = function(element) {
-    if (jQuery(element).hasClass("d-none")) {
-      return jQuery(element).removeClass("d-none");
+  var checkVisibility = function (element) {
+    if (jQuery(element).hasClass("d-none-uni")) {
+      return jQuery(element).removeClass("d-none-uni");
     }
-  }
+  };
 
-  var hamburguerMenu = document.querySelector('.uninorte-navbar__toggle');
-  var menuPanelNav = document.querySelector('.uninorte-sidebar');
+  var hamburguerMenu = document.querySelector(".uninorte-navbar__toggle");
+  var menuPanelNav = document.querySelector(".uninorte-sidebar");
 
   // Toggle button
   if (hamburguerMenu) {
-    hamburguerMenu.addEventListener('click', function() {
+    hamburguerMenu.addEventListener("click", function () {
       slideout.toggle();
     });
   }
@@ -47,14 +46,14 @@ if(mobileMenuTarget) {
   }
 
   slideout
-    .on('beforeopen', function() {
-      this.panel.classList.add('slideout-panel-wrapper-open');
+    .on("beforeopen", function () {
+      this.panel.classList.add("slideout-panel-wrapper-open");
     })
-    .on('open', function() {
-      this.panel.addEventListener('click', close);
+    .on("open", function () {
+      this.panel.addEventListener("click", close);
     })
-    .on('beforeclose', function() {
-      this.panel.classList.remove('slideout-panel-wrapper-open');
-      this.panel.removeEventListener('click', close);
+    .on("beforeclose", function () {
+      this.panel.classList.remove("slideout-panel-wrapper-open");
+      this.panel.removeEventListener("click", close);
     });
 }
