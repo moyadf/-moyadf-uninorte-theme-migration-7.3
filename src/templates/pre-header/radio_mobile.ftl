@@ -1,4 +1,4 @@
-<audio id="myAudioMobile" preload="metadata" controls style="width:0;">
+<audio id="myAudioMobile" preload="metadata" controls style="width:0; display:none !important;">
   <source src="https://cactus2.uninorte.edu.co/audio/stream.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
