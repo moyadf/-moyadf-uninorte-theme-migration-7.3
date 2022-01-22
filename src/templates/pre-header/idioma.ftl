@@ -10,7 +10,7 @@
       Idiomas
     </a>
 
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <div  class="dropdown-menu uni_uninorte_idiomas_definidos" aria-labelledby="dropdownMenuLink">
       <a href="#" class="dropdown-item flag_link" data-lang="es" translate="no">
         <img height="20px" src="${themeDisplay.getPathThemeImages()}/uninorte/lang/es.png" class="pr-4" />español</a>
 

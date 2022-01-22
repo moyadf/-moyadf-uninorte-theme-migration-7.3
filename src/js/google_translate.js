@@ -9,4 +9,3 @@ Array.prototype.forEach.call(flags, function(e){
         languageSelect.dispatchEvent(new Event("change"));
     }); 
 });
-

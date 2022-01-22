@@ -405,13 +405,17 @@ AUI().ready(
     var portalesMenuWrapper = $(".js-portales-menu-wrapper"),
       portalesMenu = $(".js-portales-menu"),
       portalesBtn = $(".js-portales-trigger");
+     var  idiomasDropDownMenu=$(".uni_uninorte_idiomas_definidos");
 
     portalesBtn.off("click").on("click", function (e) {
       if ($(this).attr("data-click-state") == 1) {
         $(this).attr("data-click-state", 0);
         portalesMenuClose();
+
       } else {
         $(this).attr("data-click-state", 1);
+        console.log("entrando a remover el shoWWWW"); 
+        idiomasDropDownMenu.removeClass("show");
         portalesMenuOpen();
       }
 
@@ -428,7 +432,10 @@ AUI().ready(
     }
 
     function portalesMenuClose() {
+
+   
       portalesMenuWrapper.css("width", "0");
+
     }
   }
 
