@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+.uninorte-sidebar {
+  display: none;
+}
+
 @media only screen and (min-width: 940px) and (max-width: 1300px) {
   .uninorte-heading {
     .uninorte__heading-bottom {
@@ -456,6 +460,12 @@
     font-size: 65%;
     font-weight: 700;
     margin: 20px 0;
+    font-style: italic;
+  }
+
+  img#icon {
+    width: 2rem;
+    margin: 0 10px;
   }
 }
 
@@ -482,10 +492,6 @@
 
   .uninorte-navbar-mobile {
     .uninorte-navbar-mobile__logo {
-      .logo_uni-big {
-        display: none;
-      }
-
       .logo_uni {
         display: block;
         margin: 0 15px;

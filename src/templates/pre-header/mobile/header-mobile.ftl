@@ -5,8 +5,6 @@
       <a class="${logo_css_class} align-items-center d-md-inline-flex logo-md" href="${uninorte_logo_url}"
         title="<@liferay.language_format arguments="" key=" go-to-x" />">
       <img id="logo_uni_header" alt="${logo_description}" class="mr-2 logo_uni-big" height="56" src="${site_logo}" />
-      <img id="logo_uni_sticky" alt="${logo_description}" class="mr-2 logo_uni" height="56"
-        src="${images_folder}/uninorte/header/uni-logo-symbol.svg" />
       </a>
     </div>
 
@@ -26,10 +24,6 @@
 
       <div class="uninorte-navbar__toggle">
         <i class="fas fa-bars" id="nav-icon"></i>
-        <#--<span></span>
-          <span></span>
-          <span></span>
-          <span></span>-->
       </div>
     </div>
   </div>
