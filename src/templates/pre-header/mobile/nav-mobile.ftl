@@ -83,7 +83,7 @@
     </div>
 
     <div class="uninorte-sidebar__radio">
-      <#include "${full_templates_path}/pre-header/radio.ftl" />
+      <#include "${full_templates_path}/pre-header/radio_mobile.ftl" />
     </div>
   </div>
 
