@@ -9,37 +9,37 @@
         <div class="uniorte-heading__social">
           <ul class="uninorte_social">
             <li>
-              <a href="https://www.facebook.com/uninortecolombia">
+              <a href="https://www.facebook.com/uninortecolombia" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://www.instagram.com/uninorteco">
+              <a href="https://www.instagram.com/uninorteco" target="_blank">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://twitter.com/uninorteco">
+              <a href="https://twitter.com/uninorteco" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://co.linkedin.com/school/universidad-del-norte ">
+              <a href="https://co.linkedin.com/school/universidad-del-norte " target="_blank">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://www.youtube.com/c/UninorteAcad%C3%A9mico">
+              <a href="https://www.youtube.com/c/UninorteAcad%C3%A9mico" target="_blank">
                 <i class="fab fa-youtube"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://wa.me/573145905480">
+              <a href="https://wa.me/573145905480" target="_blank">
                 <i class="fab fa-whatsapp"></i>
               </a>
             </li>
