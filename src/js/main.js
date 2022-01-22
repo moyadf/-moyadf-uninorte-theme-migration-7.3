@@ -414,7 +414,7 @@ AUI().ready(
 
       } else {
         $(this).attr("data-click-state", 1);
-        console.log("entrando a remover el shoWWWW"); 
+       //removiendo del dropdown Menu el show para que no muestre la pestana de idiomas
         idiomasDropDownMenu.removeClass("show");
         portalesMenuOpen();
       }
