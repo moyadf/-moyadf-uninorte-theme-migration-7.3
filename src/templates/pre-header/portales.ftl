@@ -11,6 +11,6 @@
 
 <span class="uni-pre-header__menu-item js-portales-trigger is-clickable" data-click-state="0">
   <img class="uni-svg-icon uni-icon-pre-header"
-    src="https://www.uninorte.edu.co/uninorte-theme/images/uninorte/icons/ico-portales.svg" alt="Icon portales">
+    src="${themeDisplay.getPathThemeImages()}/uninorte/icons/ico-portales.svg" alt="Icon portales">
   Portales
 </span>
