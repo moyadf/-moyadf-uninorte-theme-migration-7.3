@@ -2,7 +2,7 @@
   <div id="google_translate_element" style="display: none"></div>
 
   <div class="dropdown">
-    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+    <a class="dropdown-toggle   uni-riobit-js-idioma-trigger" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
       aria-expanded="false" style="font-size: 0.875rem; color: #3C3C3B; padding: 10px; font-weight: 700; text-decoration: none;
         " translate="no">
       <img style="width: 22px; margin-right: 5px;"

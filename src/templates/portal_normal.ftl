@@ -74,7 +74,6 @@
 <script src="${javascript_folder}/sticky.js"></script>
 <script src="${javascript_folder}/toggle.js"></script>
 <script src="${javascript_folder}/mobileMenu.js"></script>
-<script src="${javascript_folder}/owl.carousel.min.js"></script>
 
 
 
@@ -89,7 +88,9 @@
 
   <script src="${javascript_folder}/google_translate.js"></script>
 
+ <script src="${javascript_folder}/utilportal.js"></script>
 
+ 
 <script>
     Liferay.Loader.define.amd = Liferay.Loader.define._amd;
 </script>
