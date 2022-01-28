@@ -74,6 +74,7 @@
 <script src="${javascript_folder}/sticky.js"></script>
 <script src="${javascript_folder}/toggle.js"></script>
 <script src="${javascript_folder}/mobileMenu.js"></script>
+<script src="${javascript_folder}/owl.carousel.min.js"></script>
 
 
 
