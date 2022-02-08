@@ -8,7 +8,7 @@
         src="/documents/45052/47013/C-20544_SM_DCR_PWEB_footer-home_5.png/c7316973-31ae-5598-f8fc-2164906434bf?t=1633993202222" />
 
       <span class="uninorte-location">
-        km.5 vía Puerto Colombia<br>
+        Km. 5 vía Puerto Colombia<br>
         Área Metropolitana de Barranquilla<br>
         Colombia - Suramérica
       </span>

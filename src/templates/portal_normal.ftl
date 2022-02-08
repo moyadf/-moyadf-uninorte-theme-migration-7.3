@@ -10,6 +10,13 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
 	<@liferay_util["include"] page=top_head_include />
+     
+	 
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	 <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"/>
+
+
 </head>
 
 <body class="${css_class}">
@@ -60,9 +67,8 @@
     Liferay.Loader.define._amd = Liferay.Loader.define.amd;
     Liferay.Loader.define.amd = false;
 </script>
-
-<script src="${javascript_folder}/vendors/bootstrap.min.js"></script>
 <script src="${javascript_folder}/vendors/slideout.min.js" type="text/javascript"></script>
+
 
 <#if is_signed_in>
 	<!-- script main no se mostrara para no generar conflictos con la interacción en Liferay -->
